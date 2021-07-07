@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <canvas width="600" height="400"></canvas>
+    <canvas width="600" height="500"></canvas>
 </body>
 </html>
 
@@ -74,4 +74,20 @@
     desenhaQuadrado(0, 150, "yellow");
     desenhaQuadrado(50, 150, "red");
     desenhaQuadrado(100, 150, "black");
+    //decremento de 50 em 50
+
+    //TRABALHANDO COM REPETIÇÕES
+    //WHILE
+    var x=0;
+    while(x<600){
+        desenhaQuadrado(x, 250, "blue");
+        desenhaQuadrado(x, 300, "red"); 
+        x = x + 50;
+    }
+
+    //FOR
+    for (var x = 0; x < 600; x = x + 50){
+        desenhaQuadrado(x, 350, "black");
+        desenhaQuadrado(x, 400, "pink");
+    }
 </script>
