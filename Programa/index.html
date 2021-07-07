@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="400"></canvas>
+</body>
+</html>
+
+<script>
+    /*
+    function desenhaQuadradoVerde(){
+        var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "green";
+    pincel.fillRect(0, 0, 50, 50);
+    pincel.fillStroke = "black";
+    pincel.strokeRect(0, 0, 50, 50);
+
+    pincel.fillRect(50, 0, 50, 50);
+    pincel.strokeRect(50, 0, 50, 50);
+
+    pincel.fillRect(100, 0, 50, 50);
+    pincel.strokeRect(100, 0, 50, 50);
+
+    pincel.strokeRect(150, 0, 50, 50);
+    }
+    */
+
+    //CODIGO GENERICO
+    function desenhaQuadradoVerde(x){
+        var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "green";
+    pincel.fillRect(x, 0, 50, 50);
+    pincel.fillStroke = "black";
+    pincel.strokeRect(x, 0, 50, 50);
+
+    }
+    desenhaQuadradoVerde(0);
+    desenhaQuadradoVerde(50);
+    desenhaQuadradoVerde(100);
+    
+    function desenhaQuadradoAzul(x, y){
+        var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "blue";
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = "black";
+    pincel.strokeRect(x, y, 50, 50);
+
+    }
+    desenhaQuadradoAzul(0, 50);
+    desenhaQuadradoAzul(50, 50);
+    desenhaQuadradoAzul(100, 50);
+
+    function desenhaQuadrado(x, y, color){
+        var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = color;
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = "black";
+    pincel.strokeRect(x, y, 50, 50);
+
+    }
+    desenhaQuadrado(0, 150, "yellow");
+    desenhaQuadrado(50, 150, "red");
+    desenhaQuadrado(100, 150, "black");
+</script>
